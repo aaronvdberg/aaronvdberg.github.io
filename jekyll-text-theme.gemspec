@@ -1,5 +1,3 @@
-# coding: utf-8
-
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-text-theme"
   spec.version       = "2.2.6"
