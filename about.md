@@ -2,73 +2,94 @@
 layout: article
 titles:
   # @start locale config
-  en      : &EN       About
+  en      : &EN       About me 
+
   en-GB   : *EN
   en-US   : *EN
-  en-CA   : *EN
-  en-AU   : *EN
-  zh-Hans : &ZH_HANS  关于
-  zh      : *ZH_HANS
-  zh-CN   : *ZH_HANS
-  zh-SG   : *ZH_HANS
-  zh-Hant : &ZH_HANT  關於
-  zh-TW   : *ZH_HANT
-  zh-HK   : *ZH_HANT
-  ko      : &KO       소개
-  ko-KR   : *KO
-  fr      : &FR       À propos
-  fr-BE   : *FR
-  fr-CA   : *FR
-  fr-CH   : *FR
-  fr-FR   : *FR
-  fr-LU   : *FR
   # @end locale config
 key: page-about
 ---
 
-![TeXt Theme](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/TeXt-home.jpg)
+<div style="background-color: black; color: #00FF00; font-family: 'Courier New', Courier, monospace; padding: 20px; border-radius: 5px; overflow: hidden; white-space: pre;">
+  <pre id="terminal" style="margin: 0; line-height: 1.2;">
+  /$$$$$$             /$$$$$$                                         
+ /$$$_  $$           /$$__  $$                                        
+| $$$$\ $$ /$$   /$$| $$  \ $$  /$$$$$$  /$$$$$$$   /$$$$$$  /$$$$$$$ 
+| $$ $$ $$|  $$ /$$/|  $$$$$$/ |____  $$| $$__  $$ /$$__  $$| $$__  $$
+| $$\ $$$$ \  $$$$/  >$$__  $$  /$$$$$$$| $$  \ $$| $$  \ $$| $$  \ $$
+| $$ \ $$$  >$$  $$ | $$  \ $$ /$$__  $$| $$  | $$| $$  | $$| $$  | $$
+|  $$$$$$/ /$$/\  $$|  $$$$$$/|  $$$$$$$| $$  | $$|  $$$$$$/| $$  | $$
+ \______/ |__/  \__/ \______/  \_______/|__/  |__/ \______/ |__/  |__/
+                                                                      
+                                                                      
+  </pre>
+</div>
 
-TeXt is a super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc. Similar to iOS 11 style, it has large and prominent titles, round buttons and cards.
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const terminal = document.getElementById('terminal');
+    const messages = [
+      "pico -s /bin/sh",
+      "/bin/sh",
+      "executing.. ",
+      "root@aaronvdberg:~$ |"
+    ];
+    let messageIndex = 0;
+    let charIndex = 0;
+    const typingSpeed = 180; // typing speed in milliseconds
 
-```javascript
-(() => console.log('Hello, World!'))();
-```
+    function typeWriter() {
+      if (messageIndex < messages.length) {
+        const message = messages[messageIndex];
+        if (charIndex < message.length) {
+          terminal.innerHTML += message.charAt(charIndex);
+          charIndex++;
+          setTimeout(typeWriter, typingSpeed);
+        } else {
+          terminal.innerHTML += '<br>';
+          messageIndex++;
+          charIndex = 0;
+          setTimeout(typeWriter, typingSpeed * 3); // pause after each message
+        }
+      }
+    }
 
-## Features
+    typeWriter();
+  });
+</script>
 
-- Responsive
-- Semantic HTML
-- Skins
-- Highlight Theme
-- Internationalization
-- Search
-- Table of contents
-- Authors
-- Additional styles (alert, tag, image, icon, button, grid, etc)
-- Extensions (audios, videos, slides, demos)
-- Markdown enhancements ([MathJax](https://www.mathjax.org/), [mermaid](https://mermaidjs.github.io/), [chartjs](http://www.chartjs.org/))
-- Sharing ([AddToAny](https://www.addtoany.com/), [AddThis](https://www.addthis.com/))
-- Comments ([Disqus](https://disqus.com/), [Gitalk](https://gitalk.github.io/), [Valine](https://valine.js.org/en/))
-- Pageview ([LeanCloud](https://leancloud.cn/))
-- Analytics ([Google Analytics](https://analytics.google.com/analytics/web/))
-- RSS ([jekyll-feed](https://github.com/jekyll/jekyll-feed))
+## Aaron Van Den Berg
 
-## Skins
+Hello! I'm Aaron Van Den Berg, a 20-year-old Computer Science undergraduate and Cyber Security club lecturer at Eduvos. I am passionate about teaching programming and contributing to the growth of the Cybersecurity scene in South Africa. Through this platform, I aim to empower individuals with the knowledge and skills needed to excel in the ever-evolving field of technology.
 
-TeXt has 6 built-in skins, you can also set up your own skin.
+## What I Do
 
-| `default` | `dark` | `forest` |
-| --- |  --- | --- |
-| ![Default](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_default.jpg) | ![Dark](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_dark.jpg) | ![Forest](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_forest.jpg) |
+As a Cyber Security club lecturer, I focus on:
+- Introducing students to the basics of programming.
+- Teaching advanced cybersecurity concepts and practices.
+- Organizing workshops and seminars to keep up with the latest trends in cybersecurity.
+- Building a community of like-minded individuals who are passionate about technology and security.
 
-| `ocean` | `chocolate` | `orange` |
-| --- |  --- | --- |
-| ![Ocean](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_ocean.jpg) | ![Chocolate](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_chocolate.jpg) | ![Orange](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_orange.jpg) |
+## My Mission
 
-### Highlight Theme
+My mission is to educate and inspire the next generation of programmers and cybersecurity professionals in South Africa. By sharing my knowledge and experience, I hope to create a safer and more secure digital environment for everyone.
 
-TeXt use [Tomorrow](https://github.com/chriskempson/tomorrow-theme) as the highlight theme.
+## Join Me
 
-| `tomorrow` | `tomorrow-night` | `tomorrow-night-eighties` | `tomorrow-night-blue` | `tomorrow-night-bright` |
-| --- |  --- | --- | --- |  --- |
-| ![Tomorrow](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow.png) | ![Tomorrow Night](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night.png) | ![Tomorrow Night Eighties](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-eighties.png) | ![Tomorrow Night Blue](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-blue.png) | ![Tomorrow Night Bright](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-bright.png) |
+If you're interested in learning more about programming or cybersecurity, feel free to reach out and join our community. Together, we can make a difference!
+
+## Watch My Introduction
+
+Check out this video to learn more about me and my work:
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+
+## Contact
+
+You can connect with me on:
+- [Twitter](https://twitter.com/0x8anon)
+- [LinkedIn](https://linkedin.com/in/aaron-vanden-berg)
+- [GitHub](https://github.com/aaronvandenberg)
+
+Thank you for visiting my page!
+
