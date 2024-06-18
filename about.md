@@ -89,7 +89,7 @@ Check out this video to learn more about me and my work:
 You can connect with me on:
 - [Twitter](https://twitter.com/0x8anon)
 - [LinkedIn](https://linkedin.com/in/aaron-vanden-berg)
-- [GitHub](https://github.com/aaronvandenberg)
+- [GitHub](https://github.com/aaronvdberg)
 
 Thank you for visiting my page!
 
