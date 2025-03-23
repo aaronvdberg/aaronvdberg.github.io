@@ -1,0 +1,23 @@
+
+
+{
+  "name": "Aaron Van Den Berg | Home",
+  "short_name": "Aaron Van Den Berg | Home",
+  "description": "Hi, I'm Aaron, a Security Analyst specializing in purple teaming, focusing on both offensive and defensive security operations. I'm currently pursuing a Bachelor's degree in Network and Security Engineering,  while actively working towards my CPTS and CISSP certifications.",
+  "icons": [
+    {
+      "src": "/assets/img/favicons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/img/favicons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }],
+  "start_url": "/index.html",
+  "theme_color": "#2a1e6b",
+  "background_color": "#ffffff",
+  "display": "fullscreen"
+}
+
