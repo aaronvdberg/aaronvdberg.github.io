@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-ruby "3.1.0"
+ruby "3.3.6"
 
 gem "jekyll-theme-chirpy", "~> 7.1", ">= 7.1.1"
 
